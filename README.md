@@ -10,11 +10,11 @@ A personal practice repo to go deep on recursive thinking >>>>> not the basic st
 
 ```
 world-of-recursion/
-├── xxx-xxx/
+├── x-xxx/
 │   ├── problem.md       ← problem statement + constraints
 │   ├── solution.js      ← solution with explanation
 │   └── test.js          ← test cases
-├── xxx-xxx/
+├── x-xxx/
 │   └── ...
 └── utils/
     └── testRunner.js    ← lightweight test runner
@@ -43,7 +43,7 @@ world-of-recursion/
 ## Running Tests
 
 ```bash
-node xxx-xxx/test.js
+node x-xxx/test.js
 ```
 
 Or use the utility runner:
