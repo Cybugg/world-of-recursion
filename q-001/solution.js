@@ -1,18 +1,20 @@
 function flatten(arr, depth = Infinity) {
-  const result = [];
- 
-  function helper(current, d) {
-    for (const el of current) {
-      if (Array.isArray(el) && d > 0) {
-        helper(el, d - 1);
-      } else {
-        result.push(el);
-      }
+    const result = [];
+
+    const helper = (current, d) => {
+        for(let ele of current){
+            if(Array.isArray(ele) && d > 0){
+                helper(ele, d-1)
+            }
+            else{
+                result.push(ele);
+            }
+        }
     }
-  }
- 
-  helper(arr, depth);
-  return result;
+
+    helper(arr, depth)
+    return result;
 }
 
-module.exports ={flatten};
+
+module.exports = { flatten };
